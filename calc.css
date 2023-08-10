@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background: url("https://img.freepik.com/free-vector/mathematical-geometric-background-vector-gradient-blue-education-remix_53876-114100.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:5px;
+    height:75vh;
+}
+button{
+    width: 5em;
+    height: 4em;
+    background:linear-gradient(to right, rgb(0, 123, 255), rgb(0, 213, 255));
+    border-color: blue;
+}
+
+#input,#output{
+    grid-column: 1/-1;
+    grid-row: span 1;
+    border: 5px solid aqua;
+    background:linear-gradient(to right, rgb(0, 123, 255), rgb(0, 213, 255));
+    width: 100%;
+    height: 5em;    
+}
+
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 27px;
+}
